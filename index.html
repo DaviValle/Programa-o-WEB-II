@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulario </title>
+    </head>
+    
+    <body style="font-size: 20px;"> 
+
+        <h1> CADASTROS DE PRODUTOS </h1>
+         
+        <form action="processa.php" method="POST" enctype="multipart/form-data">
+            <label>ID:</label>
+            <input type="number" name="id">
+            <p></p>
+            <label> Nome: </label>
+            <input type="text" name="nome">
+            <p></p>
+            <label> Preço: R$</label>
+            <input type="number" name="preco">
+            <p></p>
+            <label> Descrição: </label>
+            <input type="text" name="descricao">
+            <p></p>
+            <label> Categoria: </label>
+            <input type="text" name="categoria">
+            <p></p>
+            <label> Coloque a imagem: </label>
+            <input type="file" name="imagem" accept="image/*" required>
+            <p></p>
+            <input type="submit" value="Enviar">
+
+
+  
+        </form>
+    </body>
+</html>
